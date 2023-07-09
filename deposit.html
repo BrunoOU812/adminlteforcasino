@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deposit</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+     
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+             
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                UPIN management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Player management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview"> 
+              <li class="nav-item">
+                <a href="./playerlist.html" class="nav-link ">
+                  <i class="fas fa-users nav-icon ml-4"></i>
+                  <p>Player List</p>
+                </a>
+              </li>             
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Area management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-money-bill"></i> &nbsp;
+              <p>
+                Point management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-money-bill"></i> &nbsp;
+              <p>
+                Wallet management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item ">
+                <a href="./userlist.html" class="nav-link  ">
+                  <i class="fas fa-users nav-icon  ml-4"></i>
+                  <p>User List</p>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="./deposit.html" class="nav-link ">
+                  <i class="fas fa-money-bill nav-icon   ml-4"></i>
+                  <p>Deposit</p>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="./withdraw.html" class="nav-link ">
+                  <i class="fas fa-money-bill nav-icon   ml-4"></i>
+                  <p>Withdraw</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-life-ring"></i>&nbsp;
+              <p>
+                Game management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-university"></i>&nbsp;
+              <p>
+                Bank details
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-cogs"></i>&nbsp;
+              <p>
+                Setting
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-list"></i>&nbsp;
+              <p>
+                CMS management
+                <i class=" right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-sliders-h"></i>&nbsp;
+              <p>
+                BANNER
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-user"></i>&nbsp;
+              <p>
+                Profile
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Deposit List</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item active"> <i class="nav-icon fas fa-tachometer-alt"></i>&nbsp;Dashboard</li>
+              <li class="breadcrumb-item"><a href="#">Deposit Master</a></li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      
+      <div class="card">
+        <div class="card-header">
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title align-self-center">Deposit List</h3>
+            <div class="d-flex align-items-center ml-auto">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="datepickerBtn">
+                    <i class="far fa-calendar-alt"></i>
+                  </button>
+                </div>
+                <input type="text" class="form-control" id="fecha" placeholder="2023-05-26  /  2023-06-24">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="align-self-center">
+              Show&nbsp; &nbsp;
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">10</button>
+              <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">10</a>
+                <a class="dropdown-item" href="#">10</a>
+                <a class="dropdown-item" href="#">10</a>
+              </div>
+            </div>
+            <div class="align-self-center">
+              &nbsp; &nbsp;entries
+            </div>
+            <div class="card-tools p-2 ml-auto align-self-center">
+              <div class="input-group input-group-sm">
+                <div class="input-group-append">
+                  Search&nbsp; &nbsp;
+                </div>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+
+        <div class="card-body p-0">
+          
+          <table class="table table-striped projects">
+              <thead>
+                  <tr>
+                      <th style="width: 5%">
+                          Transaction Date
+                      </th>
+                      <th style="width: 5%">
+                          PIN ID
+                      </th>
+                      <th style="width: 5%">
+                          Name
+                      </th>
+                      <th style="width: 5%">
+                          Payment Type
+                      </th>
+                      <th style="width: 5%" >
+                          Transaction Id
+                      </th>
+                      <th style="width: 5%">
+                        Status
+                      </th>
+                      <th style="width: 5%">
+                        Amount
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>                  
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>9876543210</a></td>
+                  <td class="text-left">John Doe</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">ABC123XYZ</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">500.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>5432109876</a></td>
+                  <td class="text-left">Jane Smith</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">XYZ456ABC</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">250.00</td>
+                </tr>           
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>9988776655</a></td>
+                  <td class="text-left">Michael Johnson</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">T9876ABC</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">150.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>1122334455</a></td>
+                  <td class="text-left">Sarah Anderson</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">P6543XYZ</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">75.00</td>
+                </tr>   
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>1234567890</a></td>
+                  <td class="text-left">John Smith</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">ABC123XYZ</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">250.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>9876543210</a></td>
+                  <td class="text-left">Emily Johnson</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">XYZ456ABC</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">100.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>2468135790</a></td>
+                  <td class="text-left">Michael Brown</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">DEF456GHI</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">350.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>1357924680</a></td>
+                  <td class="text-left">Jessica Davis</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">JKL987MNO</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">200.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>2468135790</a></td>
+                  <td class="text-left">Jennifer Davis</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">ABCDEF123</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">75.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>1357924680</a></td>
+                  <td class="text-left">Michael Johnson</td>
+                  <td class="text-left">cash</td>
+                  <td class="project-state text-left">ZYXWVU987</td>
+                  <td class="project-state text-success  text-left">Completed</td>
+                  <td class="project-state text-left">125.00</td>
+                </tr>
+              </tbody>
+              
+             
+          </table>
+
+              <div class="d-flex justify-content-between align-items-center p-4">
+               <div class="input-group mr-auto d-flex align-content-center ">
+                  Showing 1 to 10 of 10 entries
+                </div>
+                
+                <div class="card-tools w-100 ">
+                  <div class="input-group input-group-sm d-flex justify-content-end">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary bg-white" type="button">Previous</button>
+                    </div>
+                    <span class="input-group-text bg-primary ">1</span>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary bg-white" type="button">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+          </div>
+        <!-- /.card-body -->
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2019-2020 <a href="https://adminlte.io">Royal Gamblers</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b>
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>

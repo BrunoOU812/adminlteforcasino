@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+     
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+             
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                UPIN management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Player management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview"> 
+              <li class="nav-item">
+                <a href="./playerlist.html" class="nav-link ">
+                  <i class="fas fa-users nav-icon ml-4"></i>
+                  <p>Player List</p>
+                </a>
+              </li>             
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Area management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-money-bill"></i> &nbsp;
+              <p>
+                Point management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-money-bill"></i> &nbsp;
+              <p>
+                Wallet management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item ">
+                <a href="./userlist.html" class="nav-link  ">
+                  <i class="fas fa-users nav-icon  ml-4"></i>
+                  <p>User List</p>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="./deposit.html" class="nav-link ">
+                  <i class="fas fa-money-bill nav-icon   ml-4"></i>
+                  <p>Deposit</p>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="./withdraw.html" class="nav-link ">
+                  <i class="fas fa-money-bill nav-icon   ml-4"></i>
+                  <p>Withdraw</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-life-ring"></i>&nbsp;
+              <p>
+                Game management
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-university"></i>&nbsp;
+              <p>
+                Bank details
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-cogs"></i>&nbsp;
+              <p>
+                Setting
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-list"></i>&nbsp;
+              <p>
+                CMS management
+                <i class=" right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-sliders-h"></i>&nbsp;
+              <p>
+                BANNER
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-user"></i>&nbsp;
+              <p>
+                Profile
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">              
+            </ul>
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Player List</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item active"> <i class="nav-icon fas fa-tachometer-alt"></i>&nbsp;Dashboard</li>
+              <li class="breadcrumb-item"><a href="#">Player Master</a></li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      
+      <div class="card">
+        <div class="card-header">
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title align-self-center">All Players</h3>
+            <div class="d-flex align-items-center ml-auto">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button" id="datepickerBtn">
+                    <i class="far fa-calendar-alt"></i>
+                  </button>
+                </div>
+                <input type="text" class="form-control" id="fecha" placeholder="2023-05-26  /  2023-06-24">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="align-self-center">
+              Show&nbsp; &nbsp;
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">10</button>
+              <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">10</a>
+                <a class="dropdown-item" href="#">10</a>
+                <a class="dropdown-item" href="#">10</a>
+              </div>
+            </div>
+            <div class="align-self-center">
+              &nbsp; &nbsp;entries
+            </div>
+            <div class="card-tools p-2 ml-auto align-self-center">
+              <div class="input-group input-group-sm">
+                <div class="input-group-append">
+                  Search&nbsp; &nbsp;
+                </div>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+
+        <div class="card-body p-0">
+          
+          <table class="table table-striped projects">
+              <thead>
+                  <tr>
+                      <th style="width: 5%">
+                          Register Date
+                      </th>
+                      <th style="width: 5%">
+                          User PIN
+                      </th>
+                      <th style="width: 5%">
+                          Name
+                      </th>
+                      <th style="width: 5%">
+                          Email
+                      </th>
+                      <th style="width: 5%" >
+                          Image
+                      </th>
+                      <th style="width: 5%">
+                        Status
+                      </th>
+                      <th style="width: 5%">
+                        Role
+                      </th>
+                      <th style="width: 5%">
+                        Login Status
+                      </th>
+                      <th style="width: 8%">
+                        Action
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>                  
+                <tr>
+                  <td class="text-left">2023-06-23 19:45</td>
+                  <td class="text-left"><a>RYL463805912005</a></td>
+                  <td class="text-left">Michael</td>
+                  <td class="text-left">michael@michael.com</td>
+                  <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                  <td class="project-state text-success font-weight-bold text-left">Unblock</td>
+                  <td class="project-state text-left">Player</td>
+                  <td class="project-state text-success font-weight-bold text-left">Active</td>
+                  <td class="project-actions text-right d-flex justify-content-between mr-5">
+                    <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                    <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock-open"></i></a>
+                    <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                  </td>
+                </tr>
+                  <tr>
+                    <td class="text-left">2023-06-23 19:45</td>
+                    <td class="text-left">RYL463805912006</td>
+                    <td class="text-left"><a>Jennifer</a></td>
+                    <td class="text-left">jennifer@jennifer.com</td>
+                    <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                    <td class="project-state text-danger font-weight-bold text-left">Blocked</td>
+                    <td class="project-state text-left">Player</td>
+                    <td class="project-state text-danger font-weight-bold text-left">Inactive</td>
+                    <td class="project-actions text-right d-flex justify-content-between mr-5">
+                      <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                      <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock"></i></a>
+                      <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">2023-06-23 19:45</td>
+                    <td class="text-left">RYL463805912007</td>
+                    <td class="text-left"><a>John</a></td>
+                    <td class="text-left">john@john.com</td>
+                    <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                    <td class="project-state text-success font-weight-bold text-left">Unblock</td>
+                    <td class="project-state text-left">Player</td>
+                    <td class="project-state text-danger font-weight-bold text-left">Inactive</td>
+                    <td class="project-actions text-right d-flex justify-content-between mr-5">
+                      <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                      <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock-open"></i></a>
+                      <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">2023-06-23 19:45</td>
+                    <td class="text-left"><a>RYL463805912008</a></td>
+                    <td class="text-left">Jessica</td>
+                    <td class="text-left">jessica@jessica.com</td>
+                    <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                    <td class="project-state text-success font-weight-bold text-left">Unblock</td>
+                    <td class="project-state text-left">Player</td>
+                    <td class="project-state text-success font-weight-bold text-left">Active</td>
+                    <td class="project-actions text-right d-flex justify-content-between mr-5">
+                      <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                      <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock-open"></i></a>
+                      <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>                  
+                  <tr>
+                    <td class="text-left">2023-06-23 19:45</td>
+                    <td class="text-left"><a>RYL463805912009</a></td>
+                    <td class="text-left">David</td>
+                    <td class="text-left">david@david.com</td>
+                    <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                    <td class="project-state text-danger font-weight-bold text-left">Blocked</td>
+                    <td class="project-state text-left">Player</td>
+                    <td class="project-state text-danger font-weight-bold text-left">Inactive</td>
+                    <td class="project-actions text-right d-flex justify-content-between mr-5">
+                      <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                      <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock"></i></a>
+                      <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">2023-06-23 19:45</td>
+                    <td class="text-left"><a>RYL463805912010</a></td>
+                    <td class="text-left">Sophia</td>
+                    <td class="text-left">sophia@sophia.com</td>
+                    <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                    <td class="project-state text-danger font-weight-bold text-left">Blocked</td>
+                    <td class="project-state text-left">Player</td>
+                    <td class="project-state text-danger font-weight-bold text-left">Inactive</td>
+                    <td class="project-actions text-right d-flex justify-content-between mr-5">
+                      <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                      <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock"></i></a>
+                      <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-left">2023-06-23 19:45</td>
+                    <td class="text-left"><a>RYL463805912011</a></td>
+                    <td class="text-left">Ethan</td>
+                    <td class="text-left">ethan@ethan.com</td>
+                    <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                    <td class="project-state text-success font-weight-bold text-left">Unblock</td>
+                    <td class="project-state text-left">Admin</td>
+                    <td class="project-state text-success font-weight-bold text-left">Active</td>
+                    <td class="project-actions text-right d-flex justify-content-between mr-5">
+                      <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                      <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock-open"></i></a>
+                      <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-left">2023-06-23 19:45</td>
+                    <td class="text-left"><a>RYL463805912012</a></td>
+                    <td class="text-left">Olivia</td>
+                    <td class="text-left">olivia@olivia.com</td>
+                    <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                    <td class="project-state text-success font-weight-bold text-left">Unblock</td>
+                    <td class="project-state text-left">Player</td>
+                    <td class="project-state text-success font-weight-bold text-left">Active</td>
+                    <td class="project-actions text-right d-flex justify-content-between mr-5">
+                      <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                      <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock-open"></i></a>
+                      <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-left">2023-06-23 19:45</td>
+                    <td class="text-left"><a>RYL463805912013</a></td>
+                    <td class="text-left">Noah</td>
+                    <td class="text-left">noah@noah.com</td>
+                    <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                    <td class="project-state text-success font-weight-bold text-left">Unblock</td>
+                    <td class="project-state text-left">Admin</td>
+                    <td class="project-state text-success font-weight-bold text-left">Active</td>
+                    <td class="project-actions text-right d-flex justify-content-between mr-5">
+                      <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                      <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock-open"></i></a>
+                      <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-left">2023-06-23 19:45</td>
+                    <td class="text-left"><a>RYL463805912014</a></td>
+                    <td class="text-left">Ava</td>
+                    <td class="text-left">ava@ava.com</td>
+                    <td class="project-state text-left"><i class="fas fa-user"></i></td>
+                    <td class="project-state text-danger font-weight-bold text-left">Blocked</td>
+                    <td class="project-state text-left">Player</td>
+                    <td class="project-state text-success font-weight-bold text-left">Active</td>
+                    <td class="project-actions text-right d-flex justify-content-between mr-5">
+                      <a class="btn btn-primary btn-sm" href="#"><i class="fas fa-edit"></i></a>
+                      <a class="btn btn-success btn-sm" href="#"><i class="fas fa-lock"></i></a>
+                      <a class="btn btn-danger btn-sm" href="#"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                  </tr>
+                  
+              </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>
